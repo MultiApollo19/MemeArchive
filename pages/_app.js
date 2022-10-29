@@ -12,7 +12,7 @@ function MemeArchive({ Component, pageProps }) {
     supabaseClient={supabaseClient}
     initialSession={pageProps.initialSession}>
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
       </Layout>
       
     </SessionContextProvider>
