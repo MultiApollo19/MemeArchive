@@ -1,0 +1,23 @@
+
+> meme-archive@0.1.0 build
+> next build
+
+info  - Loaded env from D:\MemeArchive\.env.local
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|D:\MemeArchive\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[3].oneOf[4].use[0]!D:\MemeArchive\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[3].oneOf[4].use[1]!D:\MemeArchive\styles\Home.module.css': No serializer registered for CssSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> CssSyntaxError
+Failed to compile.
+
+./styles/Home.module.css:1:1
+Syntax error: Selector "*,
+::before,
+::after" is not pure (pure selectors must contain at least one local class or id)
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@tailwind[39m base[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@tailwind[39m components[33m;[39m
+ [90m 3 | [39m[36m@tailwind[39m utilities[33m;[39m
+
+
+> Build failed because of webpack errors

@@ -1,0 +1,6 @@
+
+> meme-archive@0.1.0 lint
+> next lint
+
+info  - Loaded env from D:\MemeArchive\.env.local
+✔ No ESLint warnings or errors
