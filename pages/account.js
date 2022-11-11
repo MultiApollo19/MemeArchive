@@ -1,26 +1,37 @@
 import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react'
+import { useState,useEffect } from 'react'
 import Head from 'next/head'
 
-export default function Login(){
+export default function Account(){
     const session = useSession()
     const supabase = useSupabaseClient()
+    const [user,setUser]= useState('')
+
+    
+
+    async function getData(){
+        const data = await supabase.auth.getUser()
+        console.log(data)
+    }
     async function handleSubmit(event){
         
         event.preventDefault();
-        const email = event.target.email.value;
+        /*const email = event.target.email.value;
         if(!email){
             alert("Email is neded!")
         }else{
-            const { data, error } = await supabase.auth.signInWithOtp({
-                email:email,
-                redirectTo: 'http://localhost:3000/'
-            })
+            const { data, error } = await supabase.auth.signInWithOtp({email:email})
             console.log(data)
             console.log(error)
-        }
+        }*/
         /**/
     }
 
+
+
+    getData()
+
+    console.log(user)
     return(
         <div className="flex flex-col items-center justify-center bg-white mt-32 w-1/4 h-1/4 mx-auto rounded-xl shadow-lg">
             <Head>
