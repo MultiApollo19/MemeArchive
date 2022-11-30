@@ -24,13 +24,13 @@ function MemeArchive({ Component, pageProps }) {
 <meta property="og:url" content="https://memearchive.vercel.app/"/>
 <meta property="og:title" content="Meme Archive"/>
 <meta property="og:description" content="Place for archive your best memes!"/>
-<meta property="og:image" content="../public/logo.png"/>
+<meta property="og:image" content="/logo.png"/>
 
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:url" content="https://memearchive.vercel.app/"/>
 <meta property="twitter:title" content="Meme Archive"/>
 <meta property="twitter:description" content="Place for archive your best memes!"/>
-<meta property="twitter:image" content="../public/logo.png"/>
+<meta property="twitter:image" content="/logo.png"/>
 
   </Head>
         <Component {...pageProps}/>
