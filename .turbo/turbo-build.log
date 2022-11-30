@@ -4,20 +4,49 @@
 
 info  - Loaded env from D:\MemeArchive\.env.local
 info  - Linting and checking validity of types...
+
+./components/header.jsx
+8:13  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
 info  - Creating an optimized production build...
-<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|D:\MemeArchive\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[3].oneOf[4].use[0]!D:\MemeArchive\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[3].oneOf[4].use[1]!D:\MemeArchive\styles\Home.module.css': No serializer registered for CssSyntaxError
-<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> CssSyntaxError
-Failed to compile.
+info  - Compiled successfully
+info  - Collecting page data...
+info  - Generating static pages (0/6)
+info  - Generating static pages (1/6)
 
-./styles/Home.module.css:1:1
-Syntax error: Selector "*,
-::before,
-::after" is not pure (pure selectors must contain at least one local class or id)
+info  - Generating static pages (2/6)
+info  - Generating static pages (4/6)
+(node:12528) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+info  - Generating static pages (6/6)
+{
+  data: { user: null },
+  error: AuthApiError: invalid claim: missing sub claim
+      at D:\MemeArchive\node_modules\@supabase\gotrue-js\dist\main\lib\fetch.js:41:20
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    __isAuthError: true,
+    status: 401
+  }
+}
+info  - Finalizing page optimization...
 
-[1m[31m>[39m[22m[90m 1 | [39m[36m@tailwind[39m base[33m;[39m
- [90m   | [39m[1m[31m^[39m[22m
- [90m 2 | [39m[36m@tailwind[39m components[33m;[39m
- [90m 3 | [39m[36m@tailwind[39m utilities[33m;[39m
+Route (pages)                              Size     First Load JS
+┌ ○ / (302 ms)                             421 B           121 kB
+├   /_app                                  0 B             121 kB
+├ ○ /404                                   181 B           121 kB
+├ ○ /account (359 ms)                      777 B           122 kB
+├ λ /api/auth/[...supabase]                0 B             121 kB
+├ λ /api/hello                             0 B             121 kB
+├ ○ /login (322 ms)                        944 B           122 kB
+└ ○ /sign-up (330 ms)                      1.13 kB         122 kB
++ First Load JS shared by all              123 kB
+  ├ chunks/framework-3b5a00d5d7e8d93b.js   45.4 kB
+  ├ chunks/main-d2a793b6dc23a82a.js        25.7 kB
+  ├ chunks/pages/_app-728cfe09a3a84f9b.js  48.9 kB
+  ├ chunks/webpack-c4acd79e87956a0e.js     943 B
+  └ css/f4149abfc7804266.css               2.21 kB
 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
 
-> Build failed because of webpack errors
